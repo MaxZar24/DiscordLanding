@@ -40,19 +40,16 @@ nav {
 
 .left-header {
     position: relative;
-    /*left: -90px;*/
     top: 83px;
 }
 
 .right-header {
     position: relative;
-    /*left: -120px;*/
     top: 79px;
 }
 
 .header-center {
     position: relative;
-    /*left: -120px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,4 +108,155 @@ button {
 .login-button {
     margin: 0 0 0 220px;
     width: 70px;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    margin: 100px 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-con-pic {
+    width: 700px;
+}
+
+.first-text-container {
+    width: 380px;
+}
+
+.first-text-container > * {
+    width: 380px;
+    display: flex;
+}
+
+.first-text-container > h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.first-text-container > p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    margin: 100px 0 0 0;
+    justify-content: center;
+    background-color: #f6f6f6;
+    align-items: center;
+    height: 700px;
+}
+
+.second-con-pic {
+    width: 700px;
+}
+
+.second-text-container {
+    width: 380px;
+}
+
+.second-text-container > * {
+    width: 380px;
+    display: flex;
+}
+
+.second-text-container > h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.second-text-container > p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.third-container {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    margin: 100px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.third-con-pic {
+    width: 700px;
+}
+
+.third-text-container {
+    width: 380px;
+}
+
+.third-text-container > * {
+    width: 380px;
+    display: flex;
+}
+
+.third-text-container > h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.third-text-container > p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.fourth-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0 0 0;
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+}
+
+.fourth-container > p {
+    font-weight: bolder;
+    font-size: 35px;
+    background: url("pictures/star-text.svg") left;
+    background-size: cover;
+}
+
+.fourth-con-pic {
+    width: 1180px;
+}
+
+.fourth-text-container {
+    width: 980px;
+    text-align: center;
+
+}
+
+.fourth-text-container > * {
+    width: 980px;
+    display: flex;
+}
+
+.fourth-text-container > h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.fourth-text-container > p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.second {
+    background-color: #5865f2;
+    color: white;
 }
