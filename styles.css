@@ -260,3 +260,76 @@ button {
     background-color: #5865f2;
     color: white;
 }
+
+footer {
+    background-color: #23272a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    justify-items: center;
+    color: white;
+}
+
+.grid-container > div {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 0 0;
+    font-size: 14px;
+
+}
+
+.grid-container > div > p {
+    color: #5865f2;
+    margin-bottom: 20px;
+}
+
+.reg-button {
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: #5865f2;
+}
+
+.grid-container > div > a {
+    margin-bottom: 10px;
+}
+
+.bottom-footer {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #5865f2;
+    width: 1400px;
+}
+
+select {
+    background-color: #23272a;
+    border: none;
+    color: white;
+    margin: 24px 0;
+    font-size: 14px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
