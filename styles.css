@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    font-weight: 1200;
+    font-weight: 900;
     font-size: 50px;
 }
 
@@ -342,4 +342,496 @@ button:hover {
 .header-buttons > .download-button:hover, .login-button:hover {
     color: #5865f2;
     transition: 0.5s;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+    body {
+        width: 100%;
+    }
+
+    input {
+        display: none;
+    }
+
+    .left-header {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .download-button, .browser-button {
+        margin: 0 0 0 0;
+    }
+
+    .header-center {
+        position: absolute;
+        width: 400px;
+        left: 30px;
+        justify-content: left;
+        align-items: unset;
+        top: 150px;
+    }
+
+    .right-header {
+        position: absolute;
+        top: 327px;
+        left: 420px;
+        width: 550px;
+    }
+
+    h3 {
+        text-align: left;
+        text-indent: 0;
+        width: 600px;
+    }
+
+    header {
+        height: 650px;
+        background-size: cover;
+        align-items: initial;
+    }
+
+    nav {
+        display: flex;
+        justify-content: initial;
+    }
+
+    nav > div {
+        margin: 0 65% 0 30px;
+    }
+
+    .login-button {
+        margin: 0 0 0 0;
+    }
+
+    .first-container, .second-container, .third-container {
+        gap: 20px;
+        height: 500px;
+        margin-top: 80px;
+    }
+
+    .first-container > img, .third-container > img, .second-container > img {
+        width: 45%;
+    }
+
+    .first-container > div, .third-container > div {
+        width: 70%;
+    }
+
+    .first-text-container > *, .third-text-container > *, .fourth-text-container > * {
+        width: 85%;
+    }
+
+    .fourth-container {
+        height: 1000px;
+    }
+
+    .fourth-container > img {
+        width: 70%;
+    }
+
+    .social-media {
+        grid-area: social-media;
+    }
+
+    .grid-container {
+        grid-template-columns: 40% 25% 25%;
+        grid-template-areas:
+        "social-media product company"
+        ". resource  politics";
+        width: 100%;
+        height: 700px;
+    }
+
+    .grid-container > div {
+        margin: 50px 0 0 0;
+    }
+
+    .product {
+        grid-area: product;
+    }
+
+    .company {
+        grid-area: company;
+    }
+
+    .resource {
+        grid-area: resource;
+    }
+
+    .politics {
+        grid-area: politics;
+    }
+
+    .bottom-footer {
+        width: 80%;
+    }
+
+    .grid-container > div > * {
+        width: 180px;
+    }
+
+    .burger-menu {
+        display: block;
+        margin: 0 0 0 10px;
+    }
+
+    #check:checked ~ .sidebar {
+        display: block;
+    }
+
+    .sidebar {
+        max-width: 330px;
+        background-color: white;
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        z-index: 1;
+        top: 0;
+        border-radius: 8px 0 0 8px;
+        left: calc(100% - 375px);
+    }
+
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: 20px 0 20px 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ebedef;;
+    }
+
+    .sidebar-header a, .sidebar-header label {
+        margin: 10px 0 0 10px;
+    }
+
+    .sidebar-header label {
+        margin-right: 10px;
+    }
+
+    .sidebar-within {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 0 30px;
+        gap: 15px;
+    }
+
+    .arrow, .saf-arrow {
+        width: 22px;
+    }
+
+    .safety label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .download-button-sidebar {
+        height: 40px;
+        width: 280px;
+        color: white;
+        background-color: #5865f2;
+    }
+
+    .download-button-sidebar img {
+        width: 15px;
+    }
+
+    .sidebar-footer {
+        display: flex;
+        margin-top: 110%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .active {
+        width: 90%;
+        background: #f6f6f6;
+        color: #00b0f4;
+        border-radius: 8px;
+    }
+
+    .sidebar-within a:active {
+        width: 90%;
+    }
+
+    .safety-bar {
+        max-width: 330px;
+        background-color: white;
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        z-index: 1;
+        top: 0;
+        border-radius: 8px 0 0 8px;
+        left: calc(100% - 375px);
+    }
+
+    #safety:checked ~ .safety-bar {
+        display: block;
+    }
+
+    .safety-bar-header {
+        display: flex;
+
+        align-items: center;
+        flex-direction: row;
+        margin: 20px 10px 20px 10px;
+        justify-content: space-between;
+    }
+
+    .safety-con1, .safety-con2, .safety-con3, .safety-con4 {
+        width: 280px;
+        margin-left: 20px;
+        border-bottom: 1px solid #ebedef;
+        padding: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .safety-con1 h3, .safety-con2 h3, .safety-con3 h3, .safety-con4 h3 {
+        font-size: 20px;
+    }
+
+    .safety-con1 a, .safety-con2 a, .safety-con3 a, .safety-con4 a {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .browser-button, .login-button {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+
+        input {
+            display: none;
+        }
+
+        .right-header {
+            display: none;
+        }
+
+        .header-center {
+            width: 100%;
+            justify-content: left;
+            align-items: unset;
+        }
+
+        .header-center h1 {
+            width: 90%;
+            text-align: left;
+            font-size: 36px;
+        }
+
+        .left-header {
+            position: absolute;
+            display: flex;
+            width: 550px;
+            top: 420px;
+        }
+
+        .under-nav {
+            flex-direction: column;
+        }
+
+        h3 {
+            width: 90%;
+            font-size: 14px;
+        }
+
+        header {
+            height: 700px;
+            background: #404eed none;
+            align-items: initial;
+        }
+
+        nav {
+            display: flex;
+            justify-content: initial;
+            width: 100%;
+        }
+
+        .first-container, .second-container, .third-container, .fourth-container {
+            flex-direction: column;
+            gap: 20px;
+            align-items: initial;
+            height: 120%;
+            margin: 50px 0 50px 20px;
+            width: 100%;
+
+        }
+
+        .second-container {
+            flex-direction: column-reverse;
+        }
+
+        .first-text-container h1, .second-text-container h1, .third-text-container h1 {
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .first-text-container p, .second-text-container p, .third-text-container p, .fourth-text-container p {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .first-container > img, .third-container > img, .second-container > img, .fourth-container > img, .first-container > div, .second-container > div, .third-container > div, .fourth-container > div {
+            width: 90%;
+        }
+
+        .second-container {
+            padding-bottom: 20px;
+        }
+
+        .fourth-text-container h1 {
+            font-size: 24px;
+        }
+
+        .fourth-text-container {
+            text-align: initial;
+            padding-top: 20px;
+        }
+
+        .fourth-container > p {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .second {
+            margin-top: 10px;
+            width: 95%;
+        }
+
+        .social-media {
+            grid-area: social-media;
+        }
+
+        .grid-container {
+            grid-template-columns: 45% 45%;
+            grid-template-areas:
+        "social-media ."
+        "product company"
+        "resource politics";
+            width: 100%;
+            height: 110%;
+            margin-bottom: 30px;
+        }
+
+        .burger-menu {
+            display: block;
+            margin: 0 0 0 10px;
+        }
+
+        #check:checked ~ .sidebar {
+            display: block;
+        }
+
+        .sidebar {
+            max-width: 330px;
+            background-color: white;
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            overflow: scroll;
+            z-index: 1;
+            top: 0;
+            border-radius: 8px 0 0 8px;
+            left: calc(100% - 365px);
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin: 20px 0 20px 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ebedef;;
+        }
+
+        .sidebar-header a, .sidebar-header label {
+            margin: 10px 0 0 10px;
+        }
+
+        .sidebar-header label {
+            margin-right: 10px;
+        }
+
+        .sidebar-within {
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 0 0 30px;
+            gap: 15px;
+        }
+
+        .arrow, .saf-arrow {
+            width: 22px;
+        }
+
+        .safety label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .download-button-sidebar {
+            height: 40px;
+            width: 280px;
+            color: white;
+            background-color: #5865f2;
+        }
+
+        .download-button-sidebar img {
+            width: 15px;
+        }
+
+        .sidebar-footer {
+            display: flex;
+            margin-top: 110%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .active {
+            width: 90%;
+            background: #f6f6f6;
+            color: #00b0f4;
+            border-radius: 8px;
+        }
+
+        .sidebar-within a:active {
+            width: 90%;
+        }
+
+        .safety-bar {
+            left: calc(100% - 365px);
+
+        }
+    }
 }
